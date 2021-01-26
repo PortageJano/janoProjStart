@@ -1,0 +1,22 @@
+﻿@model janoProjStart.Models.LoginData;
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1 style="color:red"> @ViewBag.Message </h1>
+<h1> Login </h1>
+@using (Html.BeginForm())
+{
+
+<div>
+    @Html.LabelFor(a => a.email)
+    @Html.TextBoxFor(a => a.email)
+</div>
+<div>
+    @Html.LabelFor(a => a.password)
+    @Html.TextBoxFor(a => a.password)
+</div>
+<input id="Submit1" type="submit" value="submit" />
+}
+
+Dont have an account <a href ="signup"> Create One!</a>
