@@ -12,50 +12,35 @@
         <script src="bootstrap.bundle.min.js"></script>
 
     </head>
-
+    
     <div class="container">
         <div class="page-header">
             <center> <h1 style="color:red">FGC WIKI</h1></center>
         </div>
+            <div class="float-right">
+             
+                <button  onclick="location.href='Login'"> Login </button>
+                <button  onclick="location.href='SignUp'"> SignUp</button>
+                <a> hello </a>
+              
+            </div> 
+        
+        
 
+    </div>
+    
+    <div class="dropdown">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+            Fighting Games
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">DragonBall Fighterz</a></li>
+            <li><a href="#">Street Fighter 5</a></li>
+            <li><a href="#">Guilty Gear XRD Rev2</a></li>
+        </ul>
     </div>
 
 
-
-    <div class="row">
-        <div class="col-sm-6">
-
-            <div style="left: 390px" class="dropdown">
-                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
-                    Fighting Games
-                    <span class="caret"></span>
-                </button>
-
-                <ul class="dropdown-menu">
-                    <li><a href="#">Gran Blue Fantast VS</a></li>
-                    <li><a href="#">Street Fighter 5</a></li>
-                    <li><a href="#">Guilty Gear XRD Rev2</a></li>
-                </ul>
-
-            </div>
-
-
-        </div>
-        <div class="col-sm-6">
-
-            <div style="left: 440px !important; position: relative;">
-
-                <button onclick="location.href='Login'"> Login </button>
-                <button onclick="location.href='SignUp'"> SignUp</button>
-
-            </div>
-        </div>
-    </div>
-    @if (@ViewBag.Message  != null)
-    {
-        <center>Welcome @ViewBag.Message</center>
-    }
-
-
-
+  
     </html>
